@@ -1,0 +1,22 @@
+
+<div class="booking container d-flex justify-content-space-between p-2 m-5 pt-5 shadow-sm p-3 mb-5 bg-white rounded">
+  <div>
+    <div><%= image_tag ("#{@car.photo_url}"), class: "card-img-top show_car"%></div>
+    <h5 style="margin-top: 10px;"><strong><%= @car.brand %></strong> - <%= @car.model %></h5>
+    <p><strong>Year of production : </strong><%= @car.year_of_production %></p>
+    <p><strong>Price : </strong><%= @car.price_per_day %>€ /day</p>
+    <p><strong>Address : </strong><%= @car.address %></p>
+
+  </div>
+  <div class="col-sm-12 w-50 p-3">
+    <h2>Pick dates</h2>
+
+    <%= simple_form_for [@car, @booking] do |f|%>
+      <%= f.input :start_at, as: :string, input_html: { id: 'start_date' } %>
+      <%= f.input :ends_at, as: :string, input_html: { id: 'ends_date' } %>
+      <%= f.button :submit, "BOOK", class: "btn btn-primary" %>
+    <% end %>
+
+  <%= link_to "Back", cars_path, class:"btn btn-lg btn-secondary mt-5 .text-center"%>
+  </div>
+</div>
