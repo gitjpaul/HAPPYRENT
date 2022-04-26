@@ -1,1 +1,43 @@
 // Specific CSS for your home-page
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image:
+  image-url("home.jpg");
+  filter: brightness(75%);
+
+  display: flex;
+  justify-content: center;
+
+  .titreetbouton{
+    position: absolute;
+    z-index: 2;
+    margin-top: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .btn{
+      color: white;
+      font-weight: bold;
+    }
+
+  }
+
+  .texthome{
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
+.alert {
+  bottom: 821px;
+  right: 10px;
+}

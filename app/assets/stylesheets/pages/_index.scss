@@ -1,2 +1,14 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "show";
+
+.image_car{
+  height: 220px;
+  object-fit: cover;
+}
+
+.title{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;;
+}
