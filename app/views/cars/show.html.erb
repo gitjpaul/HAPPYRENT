@@ -12,7 +12,7 @@
     <h2>Pick dates</h2>
 
     <%= simple_form_for [@car, @booking] do |f|%>
-      <%= f.input :start_at, as: :string, input_html: { id: 'start_date' } %>
+      <%= f.input :starts_at, as: :string, input_html: { id: 'starts_date' } %>
       <%= f.input :ends_at, as: :string, input_html: { id: 'ends_date' } %>
       <%= f.button :submit, "BOOK", class: "btn btn-primary" %>
     <% end %>
